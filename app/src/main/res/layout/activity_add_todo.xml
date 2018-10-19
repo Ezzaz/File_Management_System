@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".activity.AddTodoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:text="Create new file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/colorPrimary"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <EditText
+                android:id="@+id/taskName"
+                android:lines="1"
+                android:hint="File Name"
+                android:background="@drawable/rectangle_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/taskDetails"
+                android:scrollbars="horizontal"
+                android:gravity="top|left"
+                android:lines="3"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="10dp"
+                android:hint="Short Note"
+                android:background="@drawable/rectangle_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/taskCategory"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/rectangle_edit_text"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/taskDate"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Date"
+                    android:background="@drawable/rectangle_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:background="@drawable/rectangle_edit_text"
+                android:id="@+id/upload"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorBlack"
+                android:text="upload file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/taskSubmit"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimary"
+                android:text="Add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

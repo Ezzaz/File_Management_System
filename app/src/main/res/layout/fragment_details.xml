@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".fragment.DetailsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/detailsName"
+                android:textSize="25sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimaryDark"
+                android:text="File Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="Short Note :"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/detailsDesp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:layout_marginHorizontal="10dp"
+                android:text="this is as task description this is as task description this is as task description this is as task description this is as task description "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Date :"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/detailsDate"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:layout_marginHorizontal="10dp"
+                android:text="11/11/2012 "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Category :"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/detailsCategory"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:layout_marginHorizontal="10dp"
+                android:text="Work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="Is Complete :"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/detailsComplete"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:layout_marginHorizontal="10dp"
+                android:text="Complete Recent File"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/detailsDocument"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Visit Document"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginHorizontal="10dp"
+                    android:textStyle="normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/detailsEdit"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Edit File"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginHorizontal="10dp"
+                    android:textStyle="normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

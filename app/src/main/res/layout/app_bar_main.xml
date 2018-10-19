@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <LinearLayout
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.app.android.file_management.search.CustomAutoCompleteView
+                    android:cursorVisible="true"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.5"
+                    android:popupBackground="@color/colorWhite"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/rectangle_search"
+                    android:id="@+id/searchautocomplete"
+                    android:completionThreshold="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageButton
+                    android:id="@+id/search_btn"
+                    android:paddingRight="0dp"
+                    android:layout_weight="8.5"
+                    android:background="@color/colorPrimary"
+                    android:tint="@color/colorWhite"
+                    android:src="@drawable/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+       </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+</android.support.design.widget.CoordinatorLayout>
